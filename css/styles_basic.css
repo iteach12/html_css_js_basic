@@ -1,6 +1,63 @@
 @import './styles.css';
 
-h1 {
-    font-size: xx-large;
-    font-weight: bolder;
+h3 {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+ul {
+  list-style-type: circle;
+  margin: 10px 30px;
+  padding: 10px;
+}
+
+li {
+  margin: 5px 0px;
+}
+
+p {
+  margin: 20px;
+}
+
+hr {
+  margin: 30px 20px;
+}
+
+/* 테이블 디자인 */
+table.type09 {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  margin-left: 30px;
+}
+table.type09 thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #369;
+  border-bottom: 3px solid #036;
+}
+table.type09 tbody th {
+  width: 190px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+}
+table.type09 td {
+  width: 850px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+/* 인용문구 꾸미기 */
+blockquote {
+  border: 1px solid #036;
+  border-left: 10px solid #036;
+  margin: 20px;
+  padding: 10px;
+  font-style: italic;
 }

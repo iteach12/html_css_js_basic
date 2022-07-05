@@ -1,16 +1,106 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/styles_basic.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/styles_basic.css" />
     <title>HTML_CSS_JS_STUDY</title>
-
-</head>
-<body>
-    <h1>CSS RESET</h1>
-    <p>브라우저에서 기본으로 제공하는 CSS를 모두 초기화시켜서 개발자의 의도를 정확히 구현하기 위함임.
-        마진, 패딩, 폰트크기, 굵기, 위치, 기본 색상 등 모든 것이 다 초기화됨.
-        코딩하기 전 세팅해 놓기~~
-    </p>
-</body>
+  </head>
+  <body>
+    <a href="">HOME</a>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>CSS RESET</h3>
+    <blockquote class="quote-card blue-card">
+      <p class="quote-paragraph">
+        브라우저 기본 CSS스타일을 모두 초기화. 개발자의 의도를 정확히 구현하기
+        위함임. 마진, 패딩, 폰트크기, 굵기, 위치, 기본 색상 등 모든 것이 다
+        초기화됨. 코딩하기 전 세팅해 놓기~~
+      </p>
+    </blockquote>
+    <p class="memo"></p>
+    <hr />
+    <h3>주석 스타일</h3>
+    <ul>
+      <li>한 줄 주석 (ctrl+슬래시)</li>
+      <li>여러 줄 주석 (블럭+ctrl+슬래시)</li>
+      <li>주석은 항상 차곡차곡 쌓아둔다는 느낌으로</li>
+    </ul>
+    <hr />
+    <h3>스타일 시트</h3>
+    <table class="type09">
+      <thead>
+        <tr>
+          <th scope="cols">종류</th>
+          <th scope="cols">설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">브라우저 기본 스타일</th>
+          <td>
+            웹 브라우저에 웹 문서를 표시할 때 브라우저에서 기본으로 사용하는
+            스타일. 이걸 안쓰려면, css reset 해주면 됨.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">인라인 스타일</th>
+          <td>
+            style 속성을 사용해 필요한 요소에 스타일을 직접 지정. html에서 바로
+            속성값으로 입력하는 방식. 급하거나, 반드시 이 방식이어야하는 경우가
+            아니라면 사용하지 말자...
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">내부 스타일 시트</th>
+          <td>
+            문서 head에 넣어두고 이 문서에만 적용한다면 사용. 역시 필요한
+            경우에만 이렇게...
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">외부 스타일 시트</th>
+          <td>외부에 파일 생성하여 연결. css 파일끼리 import도 됨.</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h3>CSS 기본 선택자</h3>
+    <table class="type09">
+      <thead>
+        <tr>
+          <th scope="cols">종류</th>
+          <th scope="cols">예시</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">전체 선택자</th>
+          <td>* { margin: 0;}</td>
+        </tr>
+        <tr>
+          <th scope="row">타입 선택자</th>
+          <td>p { font-style: italic;}</td>
+        </tr>
+        <tr>
+          <th scope="row">클래스 선택자</th>
+          <td>.bg { background-color:blue;}</td>
+        </tr>
+        <tr>
+          <th scope="row">id 선택자</th>
+          <td>#container { width:50px; }</td>
+        </tr>
+        <tr>
+          <th scope="row">그룹 선택자</th>
+          <td>h1, h2 { text-align:center; }</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h3>스타일 우선순위</h3>
+  </body>
 </html>
