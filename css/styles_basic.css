@@ -1,8 +1,21 @@
+/* css reset 적용 */
 @import './styles.css';
+
+/* 기본 스타일 적용 */
+body {
+  width: 100%;
+  height: 100%;
+}
 
 h3 {
   font-size: xx-large;
   font-weight: bolder;
+  margin: 20px;
+}
+
+h4 {
+  font-size: x-large;
+  font-weight: 600;
   margin: 20px;
 }
 
@@ -24,6 +37,22 @@ hr {
   margin: 30px 20px;
 }
 
+/* 메인 페이지 디자인 적용 */
+.page-title {
+  margin: 30px 30px;
+}
+main {
+  display: flex;
+  margin: 0 30px;
+}
+section {
+  width: 25%;
+  height: 70%;
+  margin-right: 20px;
+  border-right: 1px solid black;
+}
+
+/* 개별 페이지 디자인 적용 */
 /* 테이블 디자인 */
 table.type09 {
   border-collapse: collapse;
