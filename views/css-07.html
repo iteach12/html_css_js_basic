@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../css/styles_basic.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+    </style>
     <title>07-텍스트 CSS</title>
     <script
       src="https://kit.fontawesome.com/a857091e38.js"
@@ -78,26 +81,142 @@
       <thead>
         <tr>
           <th scope="cols">종류</th>
-          <th scope="cols">주소</th>
+          <th scope="cols">예시</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th scope="row">구글웹폰트</th>
           <td>
-            <a href="https://fonts.google.com" target="_blank"
-              >Google Web Font</a
+            <a href="https://fonts.google.com" target="_blank">
+              Google Web Font
+            </a>
+            <br />
+            <!-- 기본 폰트 -->
+
+            <div class="font-test">
+              <p>올 여름 혼자 어때</p>
+              <p>둘이 어때, 셋이 어때</p>
+            </div>
+
+            <!-- 
+              <head>
+              <style>
+              @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+              </style>
+              </head> 
+            -->
+            <!-- 구글 웹 폰트 -->
+            <p>[구글 웹폰트]</p>
+            <div
+              class="font-test"
+              style="font-family: 'Black Han Sans', sans-serif"
             >
+              <p>올 여름 혼자 어때</p>
+              <p>둘이 어때, 셋이 어때</p>
+            </div>
           </td>
         </tr>
         <tr>
           <th scope="row">눈누</th>
           <td>
-            <a href="https://noonnu.cc/">눈누 웹 폰트</a>
+            <a href="https://noonnu.cc/" target="_blank">눈누 웹 폰트</a>
+            <p>[기본 폰트]</p>
+            <div class="font-test">
+              <p>올 여름 혼자 어때</p>
+              <p>둘이 어때, 셋이 어때</p>
+            </div>
+            <p>[강원도교육청 웹폰트 GangwonEdu_OTFBoldA]</p>
+            <div
+              class="font-test"
+              style="font-family: 'GangwonEdu_OTFBoldA', sans-serif"
+            >
+              <p>올 여름 혼자 어때</p>
+              <p>둘이 어때, 셋이 어때</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">유의사항</th>
+          <td>
+            반드시 저작권 확인하고 쓸 것. 웹페이지에 탑재 가능한지, 폰트
+            라이센스를 기재해야 하는지 등등.
           </td>
         </tr>
       </tbody>
     </table>
+    <hr />
+    <h3>글자색 지정 color</h3>
+    <blockquote>16진수, hsl or hsla, 영문명, rgb or rgba</blockquote>
+    <table class="type09">
+      <thead>
+        <tr>
+          <th scope="cols">종류</th>
+          <th scope="cols">주소</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">16진수</th>
+          <td>
+            <p># 뒤에 두 자리씩 묶어 #RRGGBB로 표시</p>
+            <p>
+              각 색상마다 하나도 섞이지 않았음을 표시하는 00부터 가득 섞였음을
+              표시하는 ff까지 사용 가능
+            </p>
+            <p>
+              만약 색상 값이 #0000ff처럼 두자리씩 중복된다면 #00f로 줄여서 표기
+              가능
+            </p>
+            <p>
+              <a
+                href="https://www.google.com/search?q=color+picker&oq=color+picker&aqs=chrome..69i57.3939j0j1&sourceid=chrome&ie=UTF-8#bsht=CgRmYnNtEgQIBBAA"
+                target="_blank"
+                rel="noopener noreferrer"
+                >구글 color picker</a
+              >
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">hsl or hsla</th>
+          <td>
+            <p>색상, 채도, 명도의 줄임말. hsl+a는 alpha를 추가한 것</p>
+            <p>지금까지 이걸 써 본 적은 없...다..</p>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">영문명</th>
+          <td>
+            <p style="color: Orange">잘 알려진 색상 이름 사용</p>
+            <p style="color: Olive">
+              <a
+                href="https://www.computerhope.com/htmcolor.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                HTML color codes
+              </a>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">rgb or rgba</th>
+          <td>
+            <p>0~255사이의 값으로 표현</p>
+            <p>물론 rga+a는 alpha값</p>
+            <p>h1 {color : rgba(0, 0, 255, 0.5);}</p>
+            <p>
+              <u
+                ># 알파값을 조정하여 애니매이션에서 사라지게 하는 효과를 내는
+                경우가 있음.</u
+              >
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
     <footer>
       <div class="footer-design">
         <h3>END</h3>

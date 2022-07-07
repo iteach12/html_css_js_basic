@@ -34,7 +34,7 @@ li {
 }
 
 p {
-  margin: 20px;
+  margin: 10px;
 }
 
 hr {
@@ -143,4 +143,17 @@ footer div h3 {
   border-radius: 4px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
   background: #6698cb;
+}
+
+/* 웹 폰트 적용 */
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-test {
+  font-size: 30px;
 }
