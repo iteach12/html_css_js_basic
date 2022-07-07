@@ -152,7 +152,7 @@
       <thead>
         <tr>
           <th scope="cols">종류</th>
-          <th scope="cols">주소</th>
+          <th scope="cols">설명</th>
         </tr>
       </thead>
       <tbody>
@@ -213,6 +213,105 @@
               >
             </p>
           </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h3>텍스트 정렬 text-align</h3>
+    <blockquote>text-align 속성은 문단의 텍스트 정렬 방법을 지정.</blockquote>
+    <table class="type09">
+      <thead>
+        <tr>
+          <th scope="cols">종류</th>
+          <th scope="cols">설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">start</th>
+          <td style="text-align: start">
+            현재 텍스트 줄의 <u>시작 위치</u>에 맞추어 문단을 정렬
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">end</th>
+          <td style="text-align: end">
+            현재 텍스트 줄의 <u>끝 위치</u>에 맞추어 문단을 정렬
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">left</th>
+          <td style="text-align: left">
+            왼쪽에 맞추어 문단을 정렬. 줄바꿈이 일어날정도로 텍스트가 많은 경우
+            오른쪽에 여백이 생길 수 있음. 왼쪽 기준으로 정렬시키기 때문임.
+            양쪽정렬 justify와의 차이점.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">left, right</th>
+          <td style="text-align: right">오른쪽에 맞추어 문단을 정렬</td>
+        </tr>
+        <tr>
+          <th scope="row">center</th>
+          <td style="text-align: center">가운데 정렬</td>
+        </tr>
+        <tr>
+          <th scope="row">justify</th>
+          <td style="text-align: justify">
+            양쪽에 맞추어 문단을 정렬. 왼쪽 정렬과 달리 줄바꿈이 일어날 때
+            오른쪽에 여백이 생기지 않게 꽉 채워서 텍스트가 표현됨
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">match-parent</th>
+          <td style="text-align: match-parent">부모 요소를 따라 문단을 정렬</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h3>text-decoration</h3>
+    <blockquote>
+      <p>
+        하이퍼링크에 생기는 기본 밑줄 없앨 때 많이 사용했음... 그 외에 밑줄,
+        취소선 등을 컨트롤 할 때 사용하는 속성.
+      </p>
+      <p>none, underline, overline, line-through 옵션이 있음.</p>
+    </blockquote>
+    <hr />
+    <h3
+      style="font-size: xx-large; color: #000; text-shadow: 7px 7px 20px #000"
+    >
+      text-shadow
+    </h3>
+    <blockquote>
+      text-shadow : none | 가로거리 세로거리 번짐정도 색상
+    </blockquote>
+    <table class="type09">
+      <thead>
+        <tr>
+          <th scope="cols">옵션</th>
+          <th scope="cols">내용</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">가로거리</th>
+          <td>양숫값은 글자의 오른쪽, 음숫값은 글자의 왼쪽에 그림자 생성</td>
+        </tr>
+        <tr>
+          <th scope="row">세로거리</th>
+          <td>양숫값은 글자의 아래쪽, 음숫값은 글자의 위쪽에 그림자 생성</td>
+        </tr>
+        <tr>
+          <th scope="row">번짐정도</th>
+          <td>
+            양숫값은 그림자가 모든 방향으로 크게 퍼짐. 음숫값은 그림자가 모든
+            방향으로 축소됨. 기본값은 0.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">색상</th>
+          <td>그림자의 색상. 기본값은 글자색.</td>
         </tr>
       </tbody>
     </table>
