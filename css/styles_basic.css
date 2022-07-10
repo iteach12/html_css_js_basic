@@ -69,10 +69,11 @@ header {
 
 /* 테이블 디자인 */
 table.type09 {
+  
   border-collapse: collapse;
   text-align: left;
   line-height: 1.5;
-  margin-left: 30px;
+  margin:0px auto;
 }
 table.type09 thead th {
   padding: 10px;
@@ -100,7 +101,7 @@ table.type09 td {
 blockquote {
   border: 1px solid #036;
   border-left: 10px solid #036;
-  margin: 20px;
+  margin: 20px 40px;
   padding: 10px;
   font-size: large;
   font-style: italic;
