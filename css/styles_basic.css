@@ -10,7 +10,7 @@ body {
 h3 {
   font-size: xx-large;
   font-weight: bolder;
-  margin: 20px;
+  margin: 20px 50px;
 }
 
 h4 {
@@ -67,13 +67,25 @@ header {
 
 /* 홈 버튼 디자인 */
 
+
+/* 목차 디자인 */
+.contest-list-container{
+  margin: 30px 50px;
+  border: 1px dashed teal;
+}
+.content-list{
+  text-decoration:underline;
+  
+}
+
+
 /* 테이블 디자인 */
 table.type09 {
   
   border-collapse: collapse;
   text-align: left;
   line-height: 1.5;
-  margin:0px auto;
+  margin: 20px 50px;
 }
 table.type09 thead th {
   padding: 10px;
@@ -101,8 +113,8 @@ table.type09 td {
 blockquote {
   border: 1px solid #036;
   border-left: 10px solid #036;
-  margin: 20px 40px;
-  padding: 10px;
+  margin: 20px 60px;
+  padding: 12px;
   font-size: large;
   font-style: italic;
 }
