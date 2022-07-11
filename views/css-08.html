@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../css/styles_basic.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
     </style>
@@ -11,13 +11,12 @@
       src="https://kit.fontawesome.com/a857091e38.js"
       crossorigin="anonymous"
     ></script>
-    
   </head>
   <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <header>
-      <a href="../index.html" class="home-btn" >
+      <a href="../index.html" class="home-btn">
         <div>
           <span>
             <i class="fa-solid fa-angles-left"></i>
@@ -27,182 +26,198 @@
       </a>
     </header>
 
-    
-
     <div class="contest-list-container">
-        <h3 class="content-list">CONTENTS</h3>
-        <ul>
-          <li><a href="#blockinline">block vs inline</a></li>
-          <li><a href="#boxmodel">box model</a></li>
-          <li><a href="#content-size">width, height</a></li>
-          <li><a href="#box-sizing">box-sizing</a></li>
-          <li><a href="#box-shadow">box-shadow</a></li>
-          <li><a href="#shadow-ex">그림자 예시</a></li>
-        </ul>
-      </div>
-
+      <h3 class="content-list">CONTENTS</h3>
+      <ul>
+        <li><a href="#blockinline">block vs inline</a></li>
+        <li><a href="#boxmodel">box model</a></li>
+        <li><a href="#content-size">width, height</a></li>
+        <li><a href="#box-sizing">box-sizing</a></li>
+        <li><a href="#box-shadow">box-shadow</a></li>
+        <li><a href="#shadow-ex">그림자 예시</a></li>
+      </ul>
+    </div>
 
     <h3 id="blockinline">block vs inline</h3>
     <blockquote>
-        <ul>
-            <li>
-                Block level : 한 줄을 차지한다. 해당 요소의 너비가 100%!!
-            </li>
-            <li>
-                Inline level : 한 줄을 차지하지 않는다. 콘텐츠만큼만 영역을 차지! 여러 개의 인라인 레벨 요소 연속 표시 가능.
-            </li>
-        </ul>
+      <ul>
+        <li>Block level : 한 줄을 차지한다. 해당 요소의 너비가 100%!!</li>
+        <li>
+          Inline level : 한 줄을 차지하지 않는다. 콘텐츠만큼만 영역을 차지! 여러
+          개의 인라인 레벨 요소 연속 표시 가능.
+        </li>
+      </ul>
     </blockquote>
-    <hr>
-    <h3 id="boxmodel">
-        box model
-    </h3>
+    <hr />
+    <h3 id="boxmodel">box model</h3>
     <blockquote>
-        <ul>
-            <li>콘텐츠영역 : 콘텐츠가 담기는 영역</li>
-            <li>패딩 : 콘텐츠 영역과 박스 사이의 여백</li>
-            <li>테두리 : 박스의 테두리</li>
-            <li>마진 : 다른 요소와의 여백</li>
-        </ul>
+      <ul>
+        <li>콘텐츠영역 : 콘텐츠가 담기는 영역</li>
+        <li>패딩 : 콘텐츠 영역과 박스 사이의 여백</li>
+        <li>테두리 : 박스의 테두리</li>
+        <li>마진 : 다른 요소와의 여백</li>
+      </ul>
     </blockquote>
     <div>
-        <img src="https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png" alt="">
+      <img
+        src="https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png"
+        alt=""
+      />
     </div>
-    <hr>
-    <h3 id="content-size">
-        콘텐츠 영역의 크기 width, height
-    </h3>
+    <hr />
+    <h3 id="content-size">콘텐츠 영역의 크기 width, height</h3>
     <blockquote>
-        핵심은 콘텐츠 영역의 너비와 높이라는 것. 레이아웃을 만들다보면 생각보다 width, height값을 주는 것이 헷갈린다. 내가 원하는만큼만 자리를 차지해야 하는데 그렇지 않고 요소들끼리 겹치거나 아래로 밀리거나 body를 삐져나가거나. 각양각색의 모습으로 논리적 오류를 만들어 낸다. 따라서 다음에 나오는 <strong>box-sizing</strong>이 필요하고 잘 알아두어야한다.
+      핵심은 콘텐츠 영역의 너비와 높이라는 것. 레이아웃을 만들다보면 생각보다
+      width, height값을 주는 것이 헷갈린다. 내가 원하는만큼만 자리를 차지해야
+      하는데 그렇지 않고 요소들끼리 겹치거나 아래로 밀리거나 body를
+      삐져나가거나. 각양각색의 모습으로 논리적 오류를 만들어 낸다. 따라서 다음에
+      나오는 <strong>box-sizing</strong>이 필요하고 잘 알아두어야한다.
     </blockquote>
-    
-    <table class="type09">
-        
-        <thead>
-            <tr>
-                <th>
-                    종류
-                </th>
-                <th>설명</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>크기</th>
-                <td>너비나 높이의 값을 px나 em단위로 지정. 절대값이라 생각하면 될듯.</td>
-            </tr>
-            <tr>
-                <th>백문율</th>
-                <td>박스 모델을 포함하는 부모 요소를 기준으로 너빗값이나 높잇값을 %로 지정. 상대값이라 보면 됨. 부모 요소가 줄어들면 함께 줄어들게된다.</td>
-            </tr>
-            <tr>
-                <th>auto</th>
-                <td>박스 모델의 너빗값과 높잇값이 콘텐츠 양에 따라 자동으로 지정됨. 기본값. 하지만 기본값이라는건 언제나 나의 마음에 들지 않지.</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3 id="box-sizing">
-        box-sizing
-    </h3>
-    <blockquote>
-        웹 문서에 여러 가지 요소를 배치할 때 실제 박스 모델이 차지하는 크기는 콘텐츠 영역 외에도 콘텐츠와 테두리 사이의 여백, 테두리 두께까지 계산해야 함. 따라서 box-sizing을 혼동하면 내가 원하는 크기를 만들 수 없음. 요소를 쉽게 계산하려면 border-box로 지정해 놓는 것이 좋음.
-    </blockquote>
-    <table class="type09">
-        <thead>
-            <tr>
-                <th>종류</th>
-                <th>설명</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>border-box</th>
-                <td>테두리까지 포함해서 너빗값을 지정</td>
-            </tr>
-            <tr>
-                <th>content-box</th>
-                <td>콘텐츠 영역만 너빗값을 지정. 기본값.</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3 id="box-shadow">
-        box-shadow
-    </h3>
-    <blockquote>
-        <ul>
-            <li>그림자 넣기. 이미지 또는 div와 같이 전체 영역에 지정하여 넣을 수 있다. 그림자 넣는 방법을 잘 익혀두고, 자주 써먹자.</li>
-            <li>box-shadow: 수평거리 수직거리 흐림정도 번짐정도 색상 inset</li>
-        </ul>
-        
-    </blockquote>
-    <table class="type09">
-        <thead>
-            <tr>
-                <th>종류</th>
-                <th>설명</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>수평거리</th>
-                <td>양숫값은 요소의 오른쪽, 음수값은 요소의 왼쪽에 그림자 생성. 필수속성</td>
-            </tr>
-            <tr>
-                <th>수직거리</th>
-                <td>양숫값은 요소의 아래쪽, 음수값은 요소의 윗쪽에 그림자 생성. 필수속성</td>
-            </tr>
-            <tr>
-                <th>흐림정도</th>
-                <td>0이 기본값. 값이 커질수록 부드러운 그럼자, 음숫값은 사용할 수 없음.</td>
-            </tr>
-            <tr>
-                <th>번짐정도</th>
-                <td>양숫값을 사용하면 모든 방향으로 그림자 퍼지게 됨. 반대로 음수값은 모든 방향으로 그림자가 축소됨. 기본값 0.</td>
-            </tr>
-            <tr>
-                <th>색상</th>
-                <td>그림자 색상. 기본값은 블랙.</td>
-            </tr>
-            <tr>
-                <th>inset</th>
-                <td>그림자가 요소 안쪽으로 들어감. </td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3 id="shadow-ex">
-        그림자 예시
-    </h3>
-    <div style="
-        box-sizing: border-box;
-        width:500px;
-        height:300px;
-        border: 20px dotted yellow;
-        background-color:red;
-        margin:20px auto;
-        box-shadow:2px -2px 5px 5px blue;
-        ">
 
-    </div>
-    <div style="
+    <table class="type09">
+      <thead>
+        <tr>
+          <th>종류</th>
+          <th>설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>크기</th>
+          <td>
+            너비나 높이의 값을 px나 em단위로 지정. 절대값이라 생각하면 될듯.
+          </td>
+        </tr>
+        <tr>
+          <th>백문율</th>
+          <td>
+            박스 모델을 포함하는 부모 요소를 기준으로 너빗값이나 높잇값을 %로
+            지정. 상대값이라 보면 됨. 부모 요소가 줄어들면 함께 줄어들게된다.
+          </td>
+        </tr>
+        <tr>
+          <th>auto</th>
+          <td>
+            박스 모델의 너빗값과 높잇값이 콘텐츠 양에 따라 자동으로 지정됨.
+            기본값. 하지만 기본값이라는건 언제나 나의 마음에 들지 않지.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h3 id="box-sizing">box-sizing</h3>
+    <blockquote>
+      웹 문서에 여러 가지 요소를 배치할 때 실제 박스 모델이 차지하는 크기는
+      콘텐츠 영역 외에도 콘텐츠와 테두리 사이의 여백, 테두리 두께까지 계산해야
+      함. 따라서 box-sizing을 혼동하면 내가 원하는 크기를 만들 수 없음. 요소를
+      쉽게 계산하려면 border-box로 지정해 놓는 것이 좋음.
+    </blockquote>
+    <table class="type09">
+      <thead>
+        <tr>
+          <th>종류</th>
+          <th>설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>border-box</th>
+          <td>테두리까지 포함해서 너빗값을 지정</td>
+        </tr>
+        <tr>
+          <th>content-box</th>
+          <td>콘텐츠 영역만 너빗값을 지정. 기본값.</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h3 id="box-shadow">box-shadow</h3>
+    <blockquote>
+      <ul>
+        <li>
+          그림자 넣기. 이미지 또는 div와 같이 전체 영역에 지정하여 넣을 수 있다.
+          그림자 넣는 방법을 잘 익혀두고, 자주 써먹자.
+        </li>
+        <li>box-shadow: 수평거리 수직거리 흐림정도 번짐정도 색상 inset</li>
+      </ul>
+    </blockquote>
+    <table class="type09">
+      <thead>
+        <tr>
+          <th>종류</th>
+          <th>설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>수평거리</th>
+          <td>
+            양숫값은 요소의 오른쪽, 음수값은 요소의 왼쪽에 그림자 생성. 필수속성
+          </td>
+        </tr>
+        <tr>
+          <th>수직거리</th>
+          <td>
+            양숫값은 요소의 아래쪽, 음수값은 요소의 윗쪽에 그림자 생성. 필수속성
+          </td>
+        </tr>
+        <tr>
+          <th>흐림정도</th>
+          <td>
+            0이 기본값. 값이 커질수록 부드러운 그럼자, 음숫값은 사용할 수 없음.
+          </td>
+        </tr>
+        <tr>
+          <th>번짐정도</th>
+          <td>
+            양숫값을 사용하면 모든 방향으로 그림자 퍼지게 됨. 반대로 음수값은
+            모든 방향으로 그림자가 축소됨. 기본값 0.
+          </td>
+        </tr>
+        <tr>
+          <th>색상</th>
+          <td>그림자 색상. 기본값은 블랙.</td>
+        </tr>
+        <tr>
+          <th>inset</th>
+          <td>그림자가 요소 안쪽으로 들어감.</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h3 id="shadow-ex">그림자 예시</h3>
+    <div
+      style="
         box-sizing: border-box;
-        width:500px;
-        height:300px;
-        margin:20px auto;
-        ">
-        <img src="../images/box-shadow-screenshot.png" alt="screenshot">
+        width: 500px;
+        height: 300px;
+        border: 20px dotted yellow;
+        background-color: red;
+        margin: 20px auto;
+        box-shadow: 2px -2px 5px 5px blue;
+      "
+    ></div>
+    <div
+      style="
+        box-sizing: border-box;
+        width: 500px;
+        height: 300px;
+        margin: 20px auto;
+      "
+    >
+      <img src="../images/box-shadow-screenshot.png" alt="screenshot" />
     </div>
-    <div style="
-    box-sizing: border-box;
-    width:500px;
-    height:300px;
-    margin:50px auto;
-    background-color: teal;
-    box-shadow:4px -4px 8px 8px red;
-    ">
-        <button>OK</button>
+    <div
+      style="
+        box-sizing: border-box;
+        width: 500px;
+        height: 300px;
+        margin: 50px auto;
+        background-color: teal;
+        box-shadow: 4px -4px 8px 8px red;
+      "
+    >
+      <button>OK</button>
     </div>
     <footer>
       <div class="footer-design">
