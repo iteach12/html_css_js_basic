@@ -30,7 +30,8 @@ ul {
 }
 
 li {
-  margin: 5px 0px;
+  margin: 15px 0px;
+  font-size: larger;
 }
 
 p {

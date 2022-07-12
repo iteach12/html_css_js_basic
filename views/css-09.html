@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+    </style>
+    <title>09-image, gradation CSS</title>
+    <script
+      src="https://kit.fontawesome.com/a857091e38.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
+      <a href="../index.html" class="home-btn">
+        <div>
+          <span>
+            <i class="fa-solid fa-angles-left"></i>
+          </span>
+          <span> HOME </span>
+        </div>
+      </a>
+    </header>
+
+    <div class="contest-list-container">
+      <h3 class="content-list">CONTENTS</h3>
+      <ul>
+        <li><a href="#background">background</a></li>
+        <li><a href="#gradation">gradation</a></li>
+        <li><a href="#quiz9">연습문제</a></li>
+      </ul>
+    </div>
+
+    <h3 id="background">background</h3>
+    <blockquote>
+      <ul>
+        <li>background-image: url('image/bg1.jpg')</li>
+        <li style="list-style-position: inside">
+          큰따옴표나 작은따옴표 모두 가능. 파일은 로컬/웹 모두 가능.
+        </li>
+        <li>
+          Inline level : 한 줄을 차지하지 않는다. 콘텐츠만큼만 영역을 차지! 여러
+          개의 인라인 레벨 요소 연속 표시 가능.
+        </li>
+      </ul>
+    </blockquote>
+    <hr />
+    <table class="type09">
+      <thead>
+        <tr>
+          <th>종류</th>
+          <th>설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>수평거리</th>
+          <td>
+            양숫값은 요소의 오른쪽, 음수값은 요소의 왼쪽에 그림자 생성. 필수속성
+          </td>
+        </tr>
+        <tr>
+          <th>수직거리</th>
+          <td>
+            양숫값은 요소의 아래쪽, 음수값은 요소의 윗쪽에 그림자 생성. 필수속성
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 id="quiz8">연습문제</h3>
+    <blockquote>
+      <ul>
+        <li><a href="../sample/08/quiz-1.html">QUIZ 8-1</a></li>
+        <li><a href="../sample/08/quiz-2.html">QUIZ 8-2</a></li>
+        <li><a href="../sample/08/quiz-3.html">QUIZ 8-3</a></li>
+      </ul>
+    </blockquote>
+    <footer>
+      <div class="footer-design">
+        <h3>END</h3>
+        <a href="#" class="btn-gradient blue block">Previous</a>
+        <a href="#" class="btn-gradient blue block">Next</a>
+      </div>
+    </footer>
+    <script src="../js/topbtn.js"></script>
+  </body>
+</html>
